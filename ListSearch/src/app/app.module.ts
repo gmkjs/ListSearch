@@ -10,6 +10,8 @@ import { ObservcompComponent } from './observcomp/observcomp.component';
 import { PromiscompComponent } from './promiscomp/promiscomp.component';
 import { HttpClientModule } from '@angular/common/http';
 import { subjectService } from './subject.service';
+import { SubjComponent } from './subj/subj.component';
+import { BehsubjComponent } from './behsubj/behsubj.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { subjectService } from './subject.service';
     LoginComponent,
     RegisterComponent,
     ObservcompComponent,
-    PromiscompComponent
+    PromiscompComponent,
+    
+    SubjComponent,
+    BehsubjComponent
   ],
   imports: [
     BrowserModule,

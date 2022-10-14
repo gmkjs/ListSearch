@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { subjectService } from '../subject.service';
 
 @Component({
   selector: 'app-login',
@@ -12,12 +13,18 @@ export class LoginComponent implements OnInit {
 
   
 
-  constructor(private authService:AuthService) {
+  constructor(private authService:AuthService, 
+    private subjectService:subjectService) {
     
    }
 
   ngOnInit() {
     this.getAmigo()
+  }
+
+  getCompData(val:any){
+    this.subjectService.getSubjectSerData(val);
+console.log(val);
   }
 
   getAmigo(){

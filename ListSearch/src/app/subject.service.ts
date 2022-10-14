@@ -12,9 +12,13 @@ export class subjectService{
 
     constructor(){}
 
-    private subData = new Subject<string>();
+    public subData = new Subject<string>();
 
+   getSubjectSerData(res:any){
+console.log(res,'in Subject service')
 
+this.subData.next(res);
+   }
 }
     
 

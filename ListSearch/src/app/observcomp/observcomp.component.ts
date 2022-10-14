@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-observcomp',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObservcompComponent implements OnInit {
 
+  mySubj = new Subject();
+
+  btnclik(mks:string){
+    alert("Subject display");
+    this.mySubj.subscribe(function(){
+      console.log("Subject function");
+    });
+
+    this.mySubj.next(mks);
+
+
+  }
+
+
   constructor() { }
 
-  ngOnInit(): void {
+
+
+  ngOnInit() {
   }
+
+  
 
 }

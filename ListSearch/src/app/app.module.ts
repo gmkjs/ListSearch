@@ -6,12 +6,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; //Forms for t
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ObservcompComponent } from './observcomp/observcomp.component';
+import { PromiscompComponent } from './promiscomp/promiscomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ObservcompComponent,
+    PromiscompComponent
   ],
   imports: [
     BrowserModule,

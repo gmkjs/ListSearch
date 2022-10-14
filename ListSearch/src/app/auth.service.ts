@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-// import { httpmodule } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 
@@ -14,6 +15,11 @@ export class AuthService {
 
 // }
 
-constructor() { }
+constructor(private http: HttpClient) { }
+
+getApiData(): Observable<any> {
+return this.http.get('https://jsonplaceholder.typicode.com/posts')
+}
+
 
 }

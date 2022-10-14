@@ -8,13 +8,24 @@ import { AuthService } from '../auth.service';
   providers: [AuthService]
 })
 export class LoginComponent implements OnInit {
-
+  rowss: any;
 
   
 
-  constructor() { }
+  constructor(private authService:AuthService) {
+    
+   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getAmigo()
+  }
+
+  getAmigo(){
+    this.authService.getApiData().subscribe(res =>{
+      console.log(res, 'dat');
+      this.rowss = res.filter((x :any) => x.id < 5);
+      console.log(this.rowss)
+    })
   }
 
 }

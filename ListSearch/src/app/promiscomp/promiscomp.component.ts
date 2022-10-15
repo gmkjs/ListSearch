@@ -6,6 +6,7 @@ import { Subject } from 'rxjs';
   templateUrl: './promiscomp.component.html',
   styleUrls: ['./promiscomp.component.scss']
 })
+
 export class PromiscompComponent implements OnInit {
 
 

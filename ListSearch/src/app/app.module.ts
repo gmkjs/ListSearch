@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { subjectService } from './subject.service';
 import { SubjComponent } from './subj/subj.component';
 import { BehsubjComponent } from './behsubj/behsubj.component';
+import { CurrencyPipe } from './login/currency.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BehsubjComponent } from './behsubj/behsubj.component';
     PromiscompComponent,
     
     SubjComponent,
-    BehsubjComponent
+    BehsubjComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { BehsubjComponent } from './behsubj/behsubj.component';
 
     
   ],
-  providers: [subjectService],
+  providers: [subjectService, CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

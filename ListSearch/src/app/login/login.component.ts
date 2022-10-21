@@ -1,26 +1,28 @@
-// import { CurrencyPipe } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { subjectService } from '../subject.service';
-import { CurrencyPipe } from './currency.pipe';
 
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
-  providers: [AuthService, CurrencyPipe]
-})
-export interface person {
+export interface Person {
   name: string;
   age: number;
   city: string;
   
   }
 
-export class LoginComponent implements OnInit {
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
+  providers: [AuthService]
+})
+
+
+
+export class LoginComponent  {
   rowss: any;
+  people:  Person[] = [];
   searchTerm: any;
-  people :  person [] = [];
   names = ['Maverick', 'Goutham', 'Arxero', 'Praveen', 'Mavericus', 'Murali'];
 
   constructor(private authService:AuthService, 

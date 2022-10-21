@@ -13,6 +13,7 @@ import { subjectService } from './subject.service';
 import { SubjComponent } from './subj/subj.component';
 import { BehsubjComponent } from './behsubj/behsubj.component';
 import { CurrencyPipe } from './login/currency.pipe';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CurrencyPipe } from './login/currency.pipe';
     
     SubjComponent,
     BehsubjComponent,
+    UsdInrPipe,
     
   ],
   imports: [

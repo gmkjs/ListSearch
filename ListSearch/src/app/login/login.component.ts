@@ -2,16 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { subjectService } from '../subject.service';
 
+export interface Person {
+  name: string;
+  age: number;
+  city: string;
+  
+  }
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
   providers: [AuthService]
 })
-export class LoginComponent implements OnInit {
-  rowss: any;
 
-  
+
+
+export class LoginComponent  {
+  rowss: any;
+  people:  Person[] = [];
+  searchTerm: any;
+  names = ['Maverick', 'Goutham', 'Arxero', 'Praveen', 'Mavericus', 'Murali'];
 
   constructor(private authService:AuthService, 
     private subjectService:subjectService) {

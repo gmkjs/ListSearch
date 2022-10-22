@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { subjectService } from '../subject.service';
@@ -26,18 +25,8 @@ export class LoginComponent  {
   names = ['Maverick', 'Goutham', 'Arxero', 'Praveen', 'Mavericus', 'Murali'];
 
   constructor(private authService:AuthService, 
-    private subjectService:subjectService
+    private subjectService:subjectService) {
     
-    
-    ) {
-      this.names.forEach((c,i)=> this.people.push({
-
-        name: c,
-        age: i + 20,
-        city: 'boston' 
-      })
-      
-      )
    }
 
   ngOnInit() {
@@ -58,7 +47,5 @@ console.log(val);
   }
 
 }
-
-
 
  

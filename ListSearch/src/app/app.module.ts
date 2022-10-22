@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { subjectService } from './subject.service';
 import { SubjComponent } from './subj/subj.component';
 import { BehsubjComponent } from './behsubj/behsubj.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { BehsubjComponent } from './behsubj/behsubj.component';
     RegisterComponent,
     ObservcompComponent,
     PromiscompComponent,
-    
+    UsdInrPipe,
     SubjComponent,
     BehsubjComponent
   ],

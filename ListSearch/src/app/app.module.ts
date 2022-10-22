@@ -8,11 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ObservcompComponent } from './observcomp/observcomp.component';
 import { PromiscompComponent } from './promiscomp/promiscomp.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { subjectService } from './subject.service';
 import { SubjComponent } from './subj/subj.component';
 import { BehsubjComponent } from './behsubj/behsubj.component';
 import { CurrencyPipe } from './login/currency.pipe';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { HeaderInterceptor } from './header.interceptor';
+import { LoggingInterceptor } from './logging.interceptor';
+import { BackGroundDirective } from './directives/back-ground.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,8 @@ import { CurrencyPipe } from './login/currency.pipe';
     
     SubjComponent,
     BehsubjComponent,
+    UsdInrPipe,
+    BackGroundDirective
     
   ],
   imports: [
@@ -36,7 +42,10 @@ import { CurrencyPipe } from './login/currency.pipe';
 
     
   ],
-  providers: [subjectService, CurrencyPipe],
+  providers: [subjectService, CurrencyPipe,
+  {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
+  {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

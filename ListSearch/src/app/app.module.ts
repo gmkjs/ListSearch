@@ -17,6 +17,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { HeaderInterceptor } from './header.interceptor';
 import { LoggingInterceptor } from './logging.interceptor';
 import { BackGroundDirective } from './directives/back-ground.directive';
+import { FirstdirDirective } from './directive/firstdir.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BackGroundDirective } from './directives/back-ground.directive';
     SubjComponent,
     BehsubjComponent,
     UsdInrPipe,
-    BackGroundDirective
+    BackGroundDirective,
+    FirstdirDirective
     
   ],
   imports: [

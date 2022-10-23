@@ -29,7 +29,6 @@ import { FirstdirDirective } from './directive/firstdir.directive';
     UsdInrPipe,
     SubjComponent,
     BehsubjComponent,
-    UsdInrPipe,
     BackGroundDirective,
     FirstdirDirective
     

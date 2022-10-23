@@ -29,6 +29,10 @@ export class LoginComponent  {
     
    }
 
+   login(){
+    console.log("login working");
+   }
+
   ngOnInit() {
     this.getAmigo()
   }

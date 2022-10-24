@@ -9,8 +9,17 @@
             <input type="text" placeholder="Enter username" autocomplete="off" id="unameid" name="uname" formControlName="uname"> 
             <br>
             <label> password</label>
-            <input type="password" placeholder="Enter password" id="upwdid" name="upwd" formControlName="upwd"> 
+            <input type="password" placeholder="Enter password" autocomplete="off" id="upwdid" name="upwd" formControlName="upwd"> 
             <br>
+            <label> mobilenums</label>
+            <div formArrayName="mobilenums">
+                <div *ngFor ="let skill of lform.controls['mobilenums']['controls'];  index as i" >
+            
+           Mobile number {{i}} <input type="text" placeholder="Enter mobilenums" id="mobilenums" name="mobilenums" formControlName="{{i}}"> 
+           <button (click)="delete(i)">Delete</button>
+                </div>
+         <button (click)="addMnum()">Add mobilenums</button>
+            </div>
             <button class="but" type="submit">Login</button>
             <br>
         <a href="Signup for registration">Register</a>

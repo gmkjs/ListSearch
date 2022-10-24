@@ -54,6 +54,10 @@
 
 custPipe <h2>{{30 | usdInr: 60}}</h2>
 
+<h2 appFirstdir>Murali Custom Directive </h2>
+
+
+
 <input [(ngModel)]="searchTerm" placeholder="search item">
 
 <!-- <ul>
@@ -70,3 +74,18 @@ custPipe <h2>{{30 | usdInr: 60}}</h2>
 
 <!-- <app-register [parentData]="parentData">Register child</app-register> -->
 <app-subj></app-subj>
+<div>
+<form name="muraliform">
+<div>
+<label>Username:</label>
+<input type="text" placeholder="Enter Username">
+<br>
+<label>Password:</label>
+<input type="password" placeholder="Enter your password">
+<br>
+<button type="submit" (click)="login()">Login</button>
+
+</div>
+</form>
+
+</div>

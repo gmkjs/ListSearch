@@ -32,6 +32,10 @@ export class LoginComponent  implements OnInit{
     
    }
 
+   login(){
+    console.log("login working");
+   }
+
   ngOnInit() {
     this.getAmigo()
   }

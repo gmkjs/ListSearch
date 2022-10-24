@@ -62,4 +62,11 @@ custPipe <h2>{{30 | usdInr: 60}}</h2>
 </ul> -->
 
 <!-- <app-promiscomp></app-promiscomp> -->
+<label>INp & Out</label>
+<div>
+<input type="text" [(ngModel)]="pressData" placeholder="enter data">
+<input type="button" value="send" (click)="transferData">
+</div>
+
+<!-- <app-register [parentData]="parentData">Register child</app-register> -->
 <app-subj></app-subj>

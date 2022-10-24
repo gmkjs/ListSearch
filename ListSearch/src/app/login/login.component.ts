@@ -18,10 +18,13 @@ export interface Person {
 
 
 
-export class LoginComponent  {
+export class LoginComponent  implements OnInit{
   rowss: any;
   people:  Person[] = [];
   searchTerm: any;
+  pressData= 'Murali';
+  parentData= ''
+
   names = ['Maverick', 'Goutham', 'Arxero', 'Praveen', 'Mavericus', 'Murali'];
 
   constructor(private authService:AuthService, 
@@ -31,6 +34,12 @@ export class LoginComponent  {
 
   ngOnInit() {
     this.getAmigo()
+  }
+
+  
+
+  transferData(){
+    this.parentData = this.pressData;
   }
 
   getCompData(val:any){

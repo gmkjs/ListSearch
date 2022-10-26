@@ -18,6 +18,7 @@ import { HeaderInterceptor } from './header.interceptor';
 import { LoggingInterceptor } from './logging.interceptor';
 import { BackGroundDirective } from './directives/back-ground.directive';
 import { FirstdirDirective } from './directive/firstdir.directive';
+import { InnerComponent } from './inner/inner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FirstdirDirective } from './directive/firstdir.directive';
     SubjComponent,
     BehsubjComponent,
     BackGroundDirective,
-    FirstdirDirective
+    FirstdirDirective,
+    InnerComponent
     
   ],
   imports: [

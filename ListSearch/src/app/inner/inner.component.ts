@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-inner',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inner.component.scss']
 })
 export class InnerComponent implements OnInit {
+  @Input() allremarks:any;
 
   constructor() { }
 

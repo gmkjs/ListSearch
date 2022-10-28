@@ -69,10 +69,16 @@ custPipe <h2>{{30 | usdInr: 60}}</h2>
 <label>INp & Out</label>
 <div>
 <input type="text" [(ngModel)]="pressData" placeholder="enter data">
+
 <input type="button" value="send" (click)="transferData">
 </div>
+INPUT WORKS HERE
+<app-inner [allremarks]="parentData"></app-inner>
 
-<!-- <app-register [parentData]="parentData">Register child</app-register> -->
+<h3>@Output() firstname = new EventEmitter() syntax</h3>
+<button (click)="checkin()">click</button>
+<app-outer (place)="checkin()"></app-outer>
+
 <app-subj></app-subj>
 <div>
 <form name="muraliform">

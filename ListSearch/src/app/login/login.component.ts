@@ -23,7 +23,8 @@ export class LoginComponent  implements OnInit{
   people:  Person[] = [];
   searchTerm: any;
   pressData= 'Murali';
-  parentData= ''
+  parentData= 'today is your day bbbb';
+
 
   names = ['Maverick', 'Goutham', 'Arxero', 'Praveen', 'Mavericus', 'Murali'];
 
@@ -32,14 +33,19 @@ export class LoginComponent  implements OnInit{
     
    }
 
-   login(){
-    console.log("login working");
-   }
+  
 
   ngOnInit() {
     this.getAmigo()
   }
+  login(){
+    console.log("login working");
+   }
 
+   checkin(){
+
+    alert('parent is calling');
+   }
   
 
   transferData(){

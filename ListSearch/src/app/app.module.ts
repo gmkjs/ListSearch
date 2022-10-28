@@ -20,6 +20,7 @@ import { BackGroundDirective } from './directives/back-ground.directive';
 import { FirstdirDirective } from './directive/firstdir.directive';
 import { InnerComponent } from './inner/inner.component';
 import { ContactComponent } from './contact/contact.component';
+import { OuterComponent } from './outer/outer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     BackGroundDirective,
     FirstdirDirective,
     InnerComponent,
-    ContactComponent
+    ContactComponent,
+    OuterComponent
     
   ],
   imports: [

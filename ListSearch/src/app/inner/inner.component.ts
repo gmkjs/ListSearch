@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { GardService } from '../gard.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-inner',
@@ -10,6 +10,7 @@ import { GardService } from '../gard.service';
 
 
 export class InnerComponent implements OnInit {
+  @Input() allremarks:any;
 
   krishap:any;
   public resobj:any=[];

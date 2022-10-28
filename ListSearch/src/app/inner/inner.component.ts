@@ -18,9 +18,6 @@ export class InnerComponent implements OnInit {
 
   }
 
-  
-
-
   ngOnInit(): void {
     this.servget();
   }
@@ -30,7 +27,7 @@ export class InnerComponent implements OnInit {
     this.GardService.setapiflat().subscribe(res=>{
       console.log(res.data,'muraliapi');
       this.resobj = res.data;
-      
+
       // this.krishap = res.map((x:any)=>x);
       // console.log(this.krishap.data);
     })

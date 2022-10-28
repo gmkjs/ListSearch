@@ -1,3 +1,19 @@
-<p>inner works!</p>
+<html>
+            <div *ngFor="let recipe of resobj">
+                <div>{{recipe.id}}</div>
+                <div>{{recipe.email}}</div>
+            </div>
+
+    <ul>
+        <h2>Innercomponent</h2>
+        <!-- <li>{{krishap.id}}</li> -->
+        <li>{{resobj|json}}</li>
+        
+    </ul>
+
+
+
+
+</html>
 
 

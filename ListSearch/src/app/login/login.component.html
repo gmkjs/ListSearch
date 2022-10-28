@@ -30,15 +30,28 @@
 </head>
 <body>
 
-    <h2 appBackGround>Krishna</h2>
+    <h2 appBackGround></h2>
+    <p>7337399560</p>
+
+    <!-- <div  class="form-check"  *ngFor="let periodo of filterPeriodos()">
+        <div *ngFor="let item of periodo.periodos">json}}
+          <div> {{ item.periodo }}</div>
+        </div> -->
+
+        <div class="" *ngFor="let items of rowss">
+            <div>{{items.id}}</div>
+            <div>{{items.title}}</div>
+            <p>murali</p>
+        </div>
 
     <ul>
-        <li>userId</li>
+        <li>{{rowss.userId}}</li>
         <li>id</li>
         <li>title</li>
         <li>body</li>
     <li>https://jsonplaceholder.typicode.com/posts</li>
-    <li>{{rowss}}</li>
+    <li>{{rowss|json}}</li>
+    <li>{{rowss.title}}</li>
     </ul>
 </body>
 </html>
@@ -73,6 +86,11 @@ custPipe <h2>{{30 | usdInr: 60}}</h2>
 </div>
 
 <!-- <app-register [parentData]="parentData">Register child</app-register> -->
+
+
+    <!--Get API Calling for Murali-->
+<app-inner> </app-inner>
+
 <app-subj></app-subj>
 <div>
 <form name="muraliform">

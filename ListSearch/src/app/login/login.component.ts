@@ -55,6 +55,7 @@ console.log(val);
     this.authService.getApiData().subscribe(res =>{
       console.log(res, 'dat');
       this.rowss = res.filter((x :any) => x.id < 5);
+      // this.rowss = JSON.stringify(this.rowss);
       console.log(this.rowss)
     })
   }

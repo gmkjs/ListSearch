@@ -19,6 +19,7 @@ import { LoggingInterceptor } from './logging.interceptor';
 import { BackGroundDirective } from './directives/back-ground.directive';
 import { FirstdirDirective } from './directive/firstdir.directive';
 import { InnerComponent } from './inner/inner.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { InnerComponent } from './inner/inner.component';
     BehsubjComponent,
     BackGroundDirective,
     FirstdirDirective,
-    InnerComponent
+    InnerComponent,
+    ContactComponent
     
   ],
   imports: [

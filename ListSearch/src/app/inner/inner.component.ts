@@ -1,11 +1,14 @@
 import { GardService } from '../gard.service';
 import { Component, Input, OnInit } from '@angular/core';
+import { PostapiService } from '../postapi.service';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-inner',
   templateUrl: './inner.component.html',
   styleUrls: ['./inner.component.scss'],
-  providers:[GardService]
+  providers:[GardService,PostapiService]
 })
 
 
@@ -15,12 +18,13 @@ export class InnerComponent implements OnInit {
   krishap:any;
   public resobj:any=[];
 
-  constructor(private GardService:GardService) { 
+  constructor(private GardService:GardService,private supreme:PostapiService) { 
 
   }
 
   ngOnInit(): void {
     this.servget();
+    this.callpostdata();
   }
 
   servget(){
@@ -31,6 +35,14 @@ export class InnerComponent implements OnInit {
 
       // this.krishap = res.map((x:any)=>x);
       // console.log(this.krishap.data);
+    })
+
+  }
+
+  callpostdata(){
+
+    this.supreme.getPostData().subscribe(resp=>{
+      console.log(resp);
     })
 
   }

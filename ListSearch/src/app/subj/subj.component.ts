@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { subjectService } from '../subject.service';
 
 
 @Component({
   selector: 'app-subj',
   templateUrl: './subj.component.html',
-  styleUrls: ['./subj.component.scss']
+  styleUrls: ['./subj.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class SubjComponent implements OnInit {
 

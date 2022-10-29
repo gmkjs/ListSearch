@@ -21,6 +21,7 @@ import { FirstdirDirective } from './directive/firstdir.directive';
 import { InnerComponent } from './inner/inner.component';
 import { ContactComponent } from './contact/contact.component';
 import { OuterComponent } from './outer/outer.component';
+import { PostapiService } from './postapi.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { OuterComponent } from './outer/outer.component';
 
     
   ],
-  providers: [subjectService, CurrencyPipe,
+  providers: [subjectService, CurrencyPipe, PostapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
   {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
   ],

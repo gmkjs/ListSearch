@@ -11,8 +11,8 @@ public capi = 'HTTP://API.SHOUTCLOUD.IO/V1/SHOUT';
 public url = 'http://http'
   constructor(private mk: HttpClient) { }
 
-  getPostData(): Observable <any>{
-    Headers={'Content-Type: application/json'}
-return this.mk.post(url)
-  }
+  // getPostData(): Observable <any>{
+    // Headers={'Content-Type: application/json'}
+// return this.mk.post(url)
+//   }
 }

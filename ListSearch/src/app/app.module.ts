@@ -22,6 +22,7 @@ import { InnerComponent } from './inner/inner.component';
 import { ContactComponent } from './contact/contact.component';
 import { OuterComponent } from './outer/outer.component';
 import { PostapiService } from './postapi.service';
+import { RestComponent } from './rest/rest.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PostapiService } from './postapi.service';
     FirstdirDirective,
     InnerComponent,
     ContactComponent,
-    OuterComponent
+    OuterComponent,
+    RestComponent
     
   ],
   imports: [

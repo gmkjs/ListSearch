@@ -5,13 +5,18 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { CactivateGuard } from './cactivate.guard';
 
+import { RestComponent } from './rest/rest.component';
 
 
 const routes: Routes = [
   {path: '', component: LoginComponent },
   {path: 'login', component: LoginComponent},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
-  {path: 'register', component:RegisterComponent}
+  {path: 'register', component:RegisterComponent},
+ 
+  {path: 'rest', component:RestComponent},
+
+
 ];
 
 @NgModule({

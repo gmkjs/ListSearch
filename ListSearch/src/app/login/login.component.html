@@ -1,4 +1,4 @@
-<header class="header">
+<!-- <header class="header">
     <h1 class="title">LIST SEARCH</h1>
 </header>
 <div class="center">
@@ -32,4 +32,99 @@
 </div>
 <footer class="footer">
     <p> © Copyright 2022, All rights reserved Goutham Krishna </p>
-</footer>
+</footer> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 appBackGround></h2>
+    
+
+    <!-- <div  class="form-check"  *ngFor="let periodo of filterPeriodos()">
+        <div *ngFor="let item of periodo.periodos">json}}
+          <div> {{ item.periodo }}</div>
+        </div> -->
+<button [routerLink]="['/rest']">Search</button>
+        <div class="" *ngFor="let items of rowss">
+            <div>{{items.id}}</div>
+            <div>{{items.title}}</div>
+            
+        </div>
+
+    <ul>
+        <li>{{rowss.userId}}</li>
+        <li>id</li>
+        <li>title</li>
+        <li>body</li>
+    <li>https://jsonplaceholder.typicode.com/posts</li>
+    
+    <li>{{rowss.title}}</li>
+    </ul>
+</body>
+</html>
+<h1 class="text-center">Subjects vs Behavior Subjects</h1>
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-5">
+    <div>Data change input: <input #inputsub type="text" ></div>
+    <button (click)="getCompData(inputsub.value)"> enter comp data</button>
+
+  </div>
+</div>
+
+custPipe <h2>{{30 | usdInr: 60}}</h2>
+
+<h2 appFirstdir>Murali Custom Directive </h2>
+
+
+
+<input [(ngModel)]="searchTerm" placeholder="search item">
+
+<!-- <ul>
+    <li *ngFor = "let person of people |  currency: searchTerm: 'name' "></li>
+    {{person.name}} | {{person.age}} | {{person.city}}
+</ul> -->
+
+<!-- <app-promiscomp></app-promiscomp> -->
+<label>INp & Out</label>
+<div>
+<input type="text" [(ngModel)]="pressData" placeholder="enter data">
+
+<input type="button" value="send" (click)="transferData">
+</div>
+INPUT WORKS HERE
+<app-inner [allremarks]="parentData"></app-inner>
+
+<h3>@Output() firstname = new EventEmitter() syntax</h3>
+<button (click)="checkin()">click</button>
+<app-outer (place)="checkin()"></app-outer>
+
+<!-- <app-register [parentData]="parentData">Register child</app-register> -->
+
+
+    <!--Get API Calling for Murali-->
+<app-inner> </app-inner>
+
+<app-subj></app-subj>
+<div>
+<form name="muraliform">
+<div>
+<label>Username:</label>
+<input type="text" placeholder="Enter Username">
+<br>
+<label>Password:</label>
+<input type="password" placeholder="Enter your password">
+<br>
+<button type="submit" (click)="login()">Login</button>
+
+</div>
+</form>
+
+</div>

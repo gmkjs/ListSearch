@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { observable } from 'rxjs';
 import { RestService } from './rest.service';
 import { Users } from './users';
@@ -14,6 +15,8 @@ export class RestComponent implements OnInit {
 
   users:Users[]=[];
 
+  enteredValue: string = '';
+
   constructor(private rsk:RestService) { 
 
   }
@@ -25,5 +28,9 @@ export class RestComponent implements OnInit {
       this.users = response;
     })
   }
+
+@Output()
+  searchTextchanged : EventEmitter<string> = new EventEmitter<string>
+
 
 }

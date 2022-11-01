@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; //Forms for t
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 import { ObservcompComponent } from './observcomp/observcomp.component';
 import { PromiscompComponent } from './promiscomp/promiscomp.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -29,6 +30,7 @@ import { RestComponent } from './rest/rest.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    HomeComponent,
     ObservcompComponent,
     PromiscompComponent,
     UsdInrPipe,

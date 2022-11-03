@@ -10,6 +10,7 @@ import { LoginService } from '../login.service';
 })
 export class LoginComponent implements OnInit {
   
+   count=0;
 
   constructor(public rtr:Router, private srvc:LoginService, ) { 
 
@@ -59,5 +60,12 @@ export class LoginComponent implements OnInit {
   }
 
   
+  incre(){
+    this.count = this.count+1;
+  }
+
+  decre(){
+    this.count = this.count-1;
+  }
 
 }

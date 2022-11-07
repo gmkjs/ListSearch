@@ -24,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
 import { OuterComponent } from './outer/outer.component';
 import { PostapiService } from './postapi.service';
 import { RestComponent } from './rest/rest.component';
+import { ViewencapComponent } from './viewencap/viewencap.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RestComponent } from './rest/rest.component';
     InnerComponent,
     ContactComponent,
     OuterComponent,
-    RestComponent
+    RestComponent,
+    ViewencapComponent
     
   ],
   imports: [

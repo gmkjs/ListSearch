@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CactivateGuard } from './cactivate.guard';
 
 import { RestComponent } from './rest/rest.component';
+import { ViewencapComponent } from './viewencap/viewencap.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
   {path: 'register', component:RegisterComponent},
+  {path:'viewencap',component:ViewencapComponent},
  
   {path: 'rest', component:RestComponent},
 

@@ -5,13 +5,12 @@
           "Username":"murali",
           "password":"krishna",
           "email":"mk@gmail.com",
-          "mobile":"9999955555",
-          "murali":"testing"
+          "mobile":"9999955555"
       },
       {
           "id": 2,
           "Username":"goutham",
-          "password":"krishna",
+          "password":"krish",
           "email":"gp@gmail.com",
           "mobile":"5512045738"
       },

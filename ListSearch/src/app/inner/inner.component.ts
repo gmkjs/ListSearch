@@ -2,6 +2,7 @@ import { GardService } from '../gard.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { PostapiService } from '../postapi.service';
 import { Observable } from 'rxjs';
+import { RestService } from '../rest/rest.service';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class InnerComponent implements OnInit {
   krishap:any;
   public resobj:any=[];
 
-  constructor(private GardService:GardService,private supreme:PostapiService) { 
+  constructor(private GardService:GardService,private supreme:PostapiService,private samantha:RestService) { 
 
   }
 
@@ -43,6 +44,17 @@ export class InnerComponent implements OnInit {
 
     this.supreme.getPostData().subscribe(resp=>{
       console.log(resp);
+    })
+
+  }
+
+  getUserdetails(data:any){
+
+    // console.warn(data,'muralikrishnaaa');
+    this.samantha.postusers(data).subscribe((veera)=>{
+
+      console.log(veera);
+
     })
 
   }

@@ -18,4 +18,10 @@ export class RestService {
       return this.http.get<Users[]>(this.url);
 
      }
+
+     postusers(data:any){
+
+      return this.http.post(this.url,data);
+    
+     }
 }

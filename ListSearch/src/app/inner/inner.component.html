@@ -1,22 +1,19 @@
 <html>
-            <div *ngFor="let recipe of resobj">
-                <!-- <div>{{recipe.id}}</div>
-                <div>{{recipe.email}}</div> -->
-                <div>{{recipe.title}}</div>
-            </div>
 
-    <ul>
-        <h2>Innercomponent</h2>
-        <!-- <li>{{krishap.id}}</li> -->
-        <!-- <li>{{resobj|json}}</li> -->
-        
-    </ul>
+<head> POST API HERE</head>
+<body>
+<form #userForm="ngForm" (ngSubmit)="postUser(userForm.value)">
+    <label>Username</label>
+    <input type="text"name='username' ngModel placeholder="enter username">
+    <label>Password</label>
+    <input type="password" name='password' ngModel placeholder="enter password">
+    <label>Email</label>
+    <input type="email" name='email' ngModel placeholder="enter email">
+    <button type="submit">Add new User</button>
 
-
-
-
+</form>
+</body>
 </html>
-<p>inner works!   INPUT WORKING HERE {{allremarks}}</p>
 
 
 

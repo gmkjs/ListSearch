@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Users } from './users';
+
 
 
 
@@ -17,5 +19,16 @@ export class RestService {
 
       return this.http.get<Users[]>(this.url);
 
+     }
+
+     saveUsers(data:any){
+      return this.http.post(this.url,data)
+     }
+
+
+     getList(): Observable<any> {
+      
+        return this.http.get('https://jsonplaceholder.typicode.com/users');
+    
      }
 }

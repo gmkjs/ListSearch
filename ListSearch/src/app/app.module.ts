@@ -60,6 +60,7 @@ import { SearchBoxComponent } from './search-box/search-box.component';
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
   {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: []
 })
 export class AppModule { }

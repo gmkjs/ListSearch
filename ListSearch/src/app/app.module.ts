@@ -25,6 +25,8 @@ import { PostapiService } from './postapi.service';
 import { RestComponent } from './rest/rest.component';
 import { GetcompComponent } from './getcomp/getcomp.component';
 
+import { FilteredPipe } from './filter.pipe';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { GetcompComponent } from './getcomp/getcomp.component';
     ContactComponent,
     OuterComponent,
     RestComponent,
-    GetcompComponent
+    GetcompComponent,
+    FilteredPipe,
+    SearchBoxComponent
     
   ],
   imports: [

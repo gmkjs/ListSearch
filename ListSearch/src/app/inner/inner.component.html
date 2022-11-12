@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+<html>
+
+<head> POST API HERE</head>
+<body>
+<form #userForm="ngForm" (ngSubmit)="postUser(userForm.value)">
+    <label>Username</label>
+    <input type="text"name='username' ngModel placeholder="enter username">
+    <label>Password</label>
+    <input type="password" name='password' ngModel placeholder="enter password">
+    <label>Email</label>
+    <input type="email" name='email' ngModel placeholder="enter email">
+    <button type="submit">Add new User</button>
+
+</form>
+</body>
+</html>
+
 
     <form #userForm="ngForm" (ngSubmit)="getUserdetails(userForm.value)" >
 

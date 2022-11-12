@@ -5,6 +5,7 @@ import { InnerComponent } from './inner/inner.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RestComponent } from './rest/rest.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 
 
@@ -15,8 +16,8 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   {path: 'rest', component:RestComponent},
   {path: 'getcomp', component:GetcompComponent},
-  {path:'inner',component:InnerComponent}
-
+  {path:'inner',component:InnerComponent},
+  {path:'searchbox', component:SearchBoxComponent}
 
 
 ];

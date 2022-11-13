@@ -14,6 +14,7 @@ export class GetcompComponent implements OnInit {
   res: any;
   purple:any= [];
   authordata=[];
+  textsearch ="";
 
   constructor(public elm:GetmethService) {  }
 

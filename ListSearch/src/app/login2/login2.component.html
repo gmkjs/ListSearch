@@ -1,0 +1,12 @@
+<p>login2 works!</p>
+
+
+<form [formGroup]="loginform2" (ngSubmit)="login2()">
+    <label>Enter Username:</label>
+    <input type="text" name="username2" placeholder="Enter your Name" formControlName="username2">
+    <br>
+    <label>Enter password:</label>
+    <input type="password" name="password2" placeholder="Enter your pwd" formControlName="password2">
+    <br>
+    <button type="submit">Login</button>
+</form>

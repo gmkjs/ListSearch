@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public rtr:Router) { }
+  constructor(public rtr:Router, private goutham:ActivatedRoute) { }
 
   logoutuser(){
 
@@ -19,6 +19,14 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.goutham.queryParams.subscribe((x)=>{console.log(x);
+
+      var yourname = x["yourname"];
+      console.log("yourname is"+ yourname);
+      var yourcount = x["yourcount"];
+      console.log("yourcount is"+ yourcount);
+    
+    });
   }
 
 }

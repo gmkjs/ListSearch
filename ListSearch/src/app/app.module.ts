@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; //Forms for template driven, Reactive forms for reactive forms
 import { AppComponent } from './app.component';
@@ -10,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { Login2Component } from './login2/login2.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { AboutComponent } from './about/about.component';
+import { QueryparamComponent } from './queryparam/queryparam.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     Login2Component,
     CarrersComponent,
-    AboutComponent
+    AboutComponent,
+    QueryparamComponent
   ],
   imports: [
     BrowserModule,

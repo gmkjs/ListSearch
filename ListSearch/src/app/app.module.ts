@@ -10,6 +10,7 @@ import { Login2Component } from './login2/login2.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { AboutComponent } from './about/about.component';
 import { QueryparamComponent } from './queryparam/queryparam.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { QueryparamComponent } from './queryparam/queryparam.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

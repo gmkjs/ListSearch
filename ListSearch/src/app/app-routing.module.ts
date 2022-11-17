@@ -14,7 +14,7 @@ import { QueryparamComponent } from './queryparam/queryparam.component';
 
 const routes: Routes = [
  
-  {path: '', component: QueryparamComponent},
+  {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},

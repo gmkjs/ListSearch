@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { GetapService } from '../getap.service';
 
 
 @Component({
@@ -9,13 +10,27 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public rtr:Router, private goutham:ActivatedRoute) { }
+  krishh:any;
+
+  constructor(public rtr:Router, private goutham:ActivatedRoute, private cmk:GetapService) {
+
+    this.getapi2();
+   }
 
   logoutuser(){
 
     this.rtr.navigate(["login"]);
     // localStorage.clear();
 
+  }
+
+  getapi2(){
+    this.cmk.getapi().subscribe((resp:any)=>{
+      this.krishh = resp;
+      console.log(this.krishh);
+
+    })
+    
   }
 
   ngOnInit(): void {

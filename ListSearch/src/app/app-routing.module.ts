@@ -8,7 +8,8 @@ import { RestComponent } from './rest/rest.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 
 const routes: Routes = [
-  {path: '', pathMatch:'full', redirectTo: 'searchbox'}, ///anything will direct from app component to login component
+  // {path: '', pathMatch:'full', redirectTo: 'searchbox'}, ///anything will direct from app component to login component
+  {path:'',component:InnerComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'rest', component:RestComponent},

@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -18,13 +18,14 @@ public url = 'https://reqres.in/api/register'
         'Content-Type': 'application/json'
       }),
     
-    };
+    }; 
+    
     const body = {
       "email": "eve.holt@reqres.in",
   "password": "pistol"
      }
    
-return this.mk.post(this.url, body, httpOptions);
+return this.mk.post(this.url, body, httpOptions,);
 
 
   }

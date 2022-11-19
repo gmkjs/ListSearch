@@ -25,6 +25,8 @@ import { PostapiService } from './postapi.service';
 import { RestComponent } from './rest/rest.component';
 import { FilteredPipe } from './filter.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { MergeapiService } from './mergeapi.service';
+
 
 @NgModule({
   declarations: [
@@ -56,7 +58,7 @@ import { SearchBoxComponent } from './search-box/search-box.component';
 
     
   ],
-  providers: [subjectService, CurrencyPipe, PostapiService,
+  providers: [subjectService, CurrencyPipe, PostapiService,MergeapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
   {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
   ],

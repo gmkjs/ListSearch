@@ -19,7 +19,8 @@ export class InnerComponent implements OnInit {
   krishap:any;
   public resobj:any=[];
 
-  constructor(private GardService:GardService,private supreme:PostapiService, private pserv:RestService) { 
+  constructor(private GardService:GardService,private supreme:PostapiService,private samantha:RestService, private pserv:RestService) { 
+  
 
   }
 
@@ -53,6 +54,17 @@ this.pserv.saveUsers(data).subscribe((resp)=>{
 
     this.supreme.getPostData().subscribe(resp=>{
       console.log(resp);
+    })
+
+  }
+
+  getUserdetails(data:any){
+
+    // console.warn(data,'muralikrishnaaa');
+    this.samantha.postusers(data).subscribe((veera)=>{
+
+      console.log(veera);
+
     })
 
   }

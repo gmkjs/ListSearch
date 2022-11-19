@@ -4,8 +4,6 @@ import { Observable } from 'rxjs';
 import { Users } from './users';
 
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -21,6 +19,10 @@ export class RestService {
 
      }
 
+     postusers(data:any){
+
+      return this.http.post(this.url,data);
+     }
      saveUsers(data:any){
       return this.http.post(this.url,data)
      }

@@ -23,6 +23,8 @@ import { ContactComponent } from './contact/contact.component';
 import { OuterComponent } from './outer/outer.component';
 import { PostapiService } from './postapi.service';
 import { RestComponent } from './rest/rest.component';
+import { GetcompComponent } from './getcomp/getcomp.component';
+
 import { FilteredPipe } from './filter.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { MergeapiService } from './mergeapi.service';
@@ -44,6 +46,7 @@ import { MergeapiService } from './mergeapi.service';
     ContactComponent,
     OuterComponent,
     RestComponent,
+    GetcompComponent,
     FilteredPipe,
     SearchBoxComponent
     

@@ -1,0 +1,39 @@
+
+<!-- <table style="width:100%">
+    <tbody>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+      </tr>
+        <tr *ngFor="let element of purple">
+            <td>{{element.first_name}}</td>
+            <td>{{element.last_name}}</td>
+            <td>{{element.email}}</td>   
+        </tr>
+    </tbody>
+</table> -->
+
+<!-- <app-inner></app-inner> -->
+
+<input type="search" placeholder="Enter Text" [(ngModel)]="textsearch">
+<button type="submit" (click)="murali()">Murali</button>
+<button type="submit">Krishna</button>
+
+<table style="width:100%">
+  <tbody>
+  <tr>
+    <th> Author Name </th>
+    <th> Publish Name</th>
+  </tr>
+  <tr *ngFor="let element of books">
+    <td>{{element.author}}</td>
+    <td>{{element.title}}</td>
+  </tr>
+
+  <!-- <tr *ngFor="let price of authordata">
+    <td>{{price.author}}</td>
+    <td>{{price.title}}</td>
+  </tr> -->
+  </tbody>
+</table>

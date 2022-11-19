@@ -22,10 +22,46 @@
       "mobile": "9722156010"
     },
     {
-      "username": "kms",
-      "password": "123456",
-      "email": "kms@gmail.com",
+      "username": "Lalith",
+      "password": "kumar",
+      "email": "lalith@gmail.com",
       "id": 4
+    },
+    {
+      "username": "venu",
+      "password": "madhav",
+      "email": "venu@gmail.com",
+      "id": 5
+    },
+    {
+      "username": "Prakash",
+      "password": "1323456",
+      "email": "prakash@gmail.com",
+      "id": 6
+    },
+    {
+      "username": "Prakash",
+      "password": "1323456",
+      "email": "prakash@gmail.com",
+      "id": 7
+    },
+    {
+      "username": "swamy",
+      "password": "kumar",
+      "email": "swamy@gmail.com",
+      "id": 8
+    },
+    {
+      "username": "narayana",
+      "password": "235689",
+      "email": "narayana@gmail.com",
+      "id": 9
+    },
+    {
+      "username": "pavan",
+      "password": "159753",
+      "email": "pavan@gmail.com",
+      "id": 10
     }
   ]
 }

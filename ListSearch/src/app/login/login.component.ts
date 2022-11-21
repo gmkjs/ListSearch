@@ -19,11 +19,15 @@ export interface Person {
   providers: [AuthService]
 })
 
+  
+ 
+
 
 
 
 
 export class LoginComponent implements OnInit {
+  count=0;
   rowss: any;
   people: Person[] = [];
   searchTerm: any;
@@ -110,7 +114,14 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  
+  incre(){
+    this.count = this.count+1;
+  }
 
+  decre(){
+    this.count = this.count-1;
+  }
 
 }
 

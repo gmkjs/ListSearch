@@ -1,0 +1,11 @@
+<p>queryparam works!</p>
+
+<html>
+    <label>Enter your Name:</label>
+    <input type="text"  name="urname" id="urname" placeholder="Enter Your Texthere" [(ngModel)]="ur_name" >
+    <br><br/>
+    <label>Enter your Count:</label>
+    <input type="number"  name="urcount" id="urcount" placeholder="Enter Your Texthere" [(ngModel)]="ur_count">
+    <br>
+    <button type="submit" [routerLink]="['/home']" [queryParams]="{yourname:ur_name,yourcount:ur_count}">submit</button>
+</html>

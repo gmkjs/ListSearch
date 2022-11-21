@@ -1,3 +1,27 @@
 <p>home works!</p>
 
+<a [routerLink]="['/carrers']">Carrers</a>
+<br>
+<a routerLink="/about">About</a>
+<br>
+
+<h1>Murali</h1> 
+
 <button type="button" (click)="logoutuser()">Logout</button>
+
+<table >
+    <tbody style="width:100%">
+        <tr>
+            <th>S.no.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>UserName</th>
+        </tr>
+        <tr *ngFor="let elements of krishh">
+            <td>{{elements.id}}</td>
+            <td>{{elements.name}}</td>
+            <td>{{elements.email}}</td>
+            <td>{{elements.username}}</td>
+        </tr>
+    </tbody>
+</table>

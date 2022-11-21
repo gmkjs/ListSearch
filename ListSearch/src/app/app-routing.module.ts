@@ -8,6 +8,10 @@ import { Login2Component } from './login2/login2.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { AboutComponent } from './about/about.component';
 import { QueryparamComponent } from './queryparam/queryparam.component';
+import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
+import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
+import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
+
 
 
 
@@ -21,13 +25,16 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   {path: 'carrers', component:CarrersComponent},
   {path: 'about', component:AboutComponent},
+  {path: 'query', component:QueryparamComponent},
+  {path: 'query', component:ComponenAComponent},
+  {path: 'query', component:ComponenBComponent},
 
 
   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),SiblingmodulModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

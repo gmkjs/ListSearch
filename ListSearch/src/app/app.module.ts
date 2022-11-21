@@ -11,6 +11,8 @@ import { CarrersComponent } from './carrers/carrers.component';
 import { AboutComponent } from './about/about.component';
 import { QueryparamComponent } from './queryparam/queryparam.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
+import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     Login2Component,
     CarrersComponent,
     AboutComponent,
-    QueryparamComponent
+    QueryparamComponent,
+    ComponenAComponent,
+    ComponenBComponent
   ],
   imports: [
     BrowserModule,

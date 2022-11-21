@@ -21,7 +21,10 @@ export class HomeComponent implements OnInit {
 
     this.rtr.navigate(["login"]);
     // localStorage.clear();
+}
 
+  samanta(){
+  
   }
 
   getapi2(){

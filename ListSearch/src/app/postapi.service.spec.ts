@@ -13,4 +13,10 @@ describe('PostapiService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it(' service should match',()=>{
+    service.getPostData().subscribe((res)=>{
+      
+    })
+  })
 });

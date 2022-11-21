@@ -28,6 +28,8 @@ import { GetcompComponent } from './getcomp/getcomp.component';
 import { FilteredPipe } from './filter.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { MergeapiService } from './mergeapi.service';
+import { StoreModule } from '@ngrx/store';
+import { CounterrxComponent } from './counterrx/counterrx.component';
 
 
 @NgModule({
@@ -48,7 +50,8 @@ import { MergeapiService } from './mergeapi.service';
     RestComponent,
     GetcompComponent,
     FilteredPipe,
-    SearchBoxComponent
+    SearchBoxComponent,
+    CounterrxComponent
     
   ],
   imports: [
@@ -58,6 +61,7 @@ import { MergeapiService } from './mergeapi.service';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    StoreModule.forRoot({}, {}),
 
     
   ],

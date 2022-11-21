@@ -26,15 +26,12 @@ const routes: Routes = [
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
   {path: 'register', component:RegisterComponent},
   {path:'viewencap',component:ViewencapComponent},
- 
   {path: 'rest', component:RestComponent},
-
-
   {path: 'carrers', component:CarrersComponent},
   {path: 'about', component:AboutComponent},
   {path: 'query', component:QueryparamComponent},
-  {path: 'query', component:ComponenAComponent},
-  {path: 'query', component:ComponenBComponent},
+  {path: 'compA', component:ComponenAComponent},
+  {path: 'compB', component:ComponenBComponent},
 
 
   

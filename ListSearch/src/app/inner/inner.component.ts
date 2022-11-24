@@ -1,8 +1,9 @@
 import { GardService } from '../gard.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, DoCheck } from '@angular/core';
 import { PostapiService } from '../postapi.service';
-import { Observable } from 'rxjs';
+import { interval, Observable } from 'rxjs';
 import { RestService } from '../rest/rest.service';
+
 
 
 @Component({
@@ -15,6 +16,9 @@ import { RestService } from '../rest/rest.service';
 
 export class InnerComponent implements OnInit {
   @Input() allremarks:any;
+  myinterval = interval(2000);
+  usersinfointerval = interval(5000);
+  valusers:any;
 
   krishap:any;
   public resobj:any=[];
@@ -27,7 +31,18 @@ export class InnerComponent implements OnInit {
   ngOnInit(): void {
     this.servget();
     this.callpostdata();
+    
+    this.usersinfointerval.subscribe(x => {
+      // console.log("called user service..");
+      this.intervalmaths();
+
+    })
   }
+
+  // ngDoCheck(){
+  //   this.intervalmaths();
+  //   console.log('ngdocheck');
+  // }
 
   servget(){
 
@@ -43,7 +58,7 @@ export class InnerComponent implements OnInit {
 
 
   postUser(data:any){
-console.warn(data,'hhhh');
+// console.warn(data,'hhhh');
 this.pserv.saveUsers(data).subscribe((resp:any)=>{
   console.log(resp);
 })
@@ -59,14 +74,25 @@ this.pserv.saveUsers(data).subscribe((resp:any)=>{
   }
 
   getUserdetails(data:any){
-
     // console.warn(data,'muralikrishnaaa');
     this.pserv.postusers(data).subscribe((veera:any)=>{
-
       console.log(veera);
 
     })
 
+  }
+
+  kumar(){
+    alert("Your alert is working");
+    this.myinterval.subscribe((x)=>{
+      console.log("Hello "+ x);
+    })
+  }
+
+  intervalmaths(){
+    this.pserv.intervalusers().subscribe((abc:any)=>{
+      this.valusers = abc;
+    })
   }
 
 }

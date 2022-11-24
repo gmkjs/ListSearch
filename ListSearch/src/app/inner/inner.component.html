@@ -25,7 +25,7 @@
 </html>
 
 
-    <form #userForm="ngForm" (ngSubmit)="getUserdetails(userForm.value)" >
+    <form #masterform="ngForm" (ngSubmit)="getUserdetails(masterform.value)" >
 
         <input type="text" ngModel name="username" placeholder="Enter your Username">
         <br>
@@ -37,6 +37,27 @@
         <br>
         <button type="submit">Add NewUser</button>
     </form>
+
+
+    <button (click)="kumar()">Interval</button>
+
+    <table>
+        <tbody style="width:100%">
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Email</th>
+            </tr>
+            <tr *ngFor="let bhar of valusers">
+            <td>{{bhar.id}}</td>
+            <td>{{bhar.Username}}</td>
+            <td>{{bhar.password}}</td>
+            <td>{{bhar.email}}</td>
+            <!-- <td><button (click)="delete()">Delete</button></td> -->
+            </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>

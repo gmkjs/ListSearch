@@ -33,4 +33,8 @@ export class RestService {
         return this.http.get('https://jsonplaceholder.typicode.com/users');
     
      }
+
+     intervalusers(){
+      return this.http.get('http://localhost:3000/users');
+     }
 }

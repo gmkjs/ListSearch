@@ -11,18 +11,23 @@ export class SearchBoxComponent implements OnInit {
   listArr:any;
   searchText=''
   x=[];
+  isMobileView:any;
+  isLoaded:any;
 
-  constructor(public rstsrv:RestService) { }
+  constructor(public rstsrv:RestService, ) { }
 
   ngOnInit() {
     this.getUserData()
+    this.isMobileView = window.innerWidth < 576;
   }
+
 
   getUserData() {
     this.rstsrv.getList().subscribe((res) => {
       this.listArr = res;
 
       console.log(res);
+      this.isLoaded = true;
     });
   }
 

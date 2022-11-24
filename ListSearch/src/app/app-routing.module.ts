@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CounterrxComponent } from './counterrx/counterrx.component';
 import { GetcompComponent } from './getcomp/getcomp.component';
 import { InnerComponent } from './inner/inner.component';
 import { LoginComponent } from './login/login.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'rest', component:RestComponent},
   {path: 'getcomp', component:GetcompComponent},
   {path:'inner',component:InnerComponent},
-  {path:'searchbox', component:SearchBoxComponent}
+  {path:'searchbox', component:SearchBoxComponent},
+  {path:'ngrx', component:CounterrxComponent}
 
 
 ];

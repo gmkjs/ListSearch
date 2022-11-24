@@ -26,6 +26,10 @@ import { RestComponent } from './rest/rest.component';
 import { GetcompComponent } from './getcomp/getcomp.component';
 import { FilteredPipe } from './filter.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { MergeapiService } from './mergeapi.service';
+import { StoreModule } from '@ngrx/store';
+import { CounterrxComponent } from './counterrx/counterrx.component';
+
 
 @NgModule({
   declarations: [
@@ -45,7 +49,8 @@ import { SearchBoxComponent } from './search-box/search-box.component';
     RestComponent,
     GetcompComponent,
     FilteredPipe,
-    SearchBoxComponent
+    SearchBoxComponent,
+    CounterrxComponent
     
   ],
   imports: [
@@ -55,10 +60,11 @@ import { SearchBoxComponent } from './search-box/search-box.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    StoreModule.forRoot({}, {}),
 
     
   ],
-  providers: [subjectService, CurrencyPipe, PostapiService,
+  providers: [subjectService, CurrencyPipe, PostapiService,MergeapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
   {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
   ],

@@ -1,5 +1,5 @@
 <p>search-box works!</p>
-<table>
+<table *ngIf="isLoaded">
     <input type="text" class="form-control" id="getdunzo" [(ngModel)]="searchText">
     <button (click)="bret()">Get Bret</button>
     <tr>
@@ -13,6 +13,8 @@
       <td>{{ dunzo.email }}</td>
     </tr>
   </table>
+  <div *ngIf="isMobileView">
   <input type="radio" placeholder="yes">
   <input type="radio" placeholder="no">
   <button type="menu">hello</button>
+</div>

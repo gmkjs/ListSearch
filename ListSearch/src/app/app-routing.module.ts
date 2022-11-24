@@ -12,6 +12,8 @@ import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { RestComponent } from './rest/rest.component';
+import { ViewencapComponent } from './viewencap/viewencap.component';
 
 
 const routes: Routes = [
@@ -21,11 +23,13 @@ const routes: Routes = [
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
   {path: 'register', component:RegisterComponent},
+  {path:'viewencap',component:ViewencapComponent},
+  {path: 'rest', component:RestComponent},
   {path: 'carrers', component:CarrersComponent},
   {path: 'about', component:AboutComponent},
   {path: 'query', component:QueryparamComponent},
-  {path: 'query', component:ComponenAComponent},
-  {path: 'query', component:ComponenBComponent},
+  {path: 'compA', component:ComponenAComponent},
+  {path: 'compB', component:ComponenBComponent},
 
 
   

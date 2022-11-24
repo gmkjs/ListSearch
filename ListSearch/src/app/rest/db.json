@@ -1,0 +1,26 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "Username":"murali",
+            "password":"krishna",
+            "email":"mk@gmail.com",
+            "mobile":"9999955555",
+            "murali":"testing"
+        },
+        {
+            "id": 2,
+            "Username":"goutham",
+            "password":"krish",
+            "email":"gp@gmail.com",
+            "mobile":"5512045738"
+        },
+        {
+            "id": 3,
+            "Username":"praveen",
+            "password":"ram",
+            "email":"pr@gmail.com",
+            "mobile":"9722156010"
+        }
+    ]
+}

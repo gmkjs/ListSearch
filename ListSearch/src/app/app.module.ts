@@ -13,6 +13,7 @@ import { QueryparamComponent } from './queryparam/queryparam.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
     AboutComponent,
     QueryparamComponent,
     ComponenAComponent,
-    ComponenBComponent
+    ComponenBComponent,
+    ViewchildComponent
   ],
   imports: [
     BrowserModule,

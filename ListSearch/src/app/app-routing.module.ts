@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ViewChild } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -11,14 +11,12 @@ import { QueryparamComponent } from './queryparam/queryparam.component';
 import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
-
-
-
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 
 const routes: Routes = [
  
-  {path: '', component: HomeComponent},
+  {path: '', component:ViewchildComponent },
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},

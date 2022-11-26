@@ -16,11 +16,12 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
 
 import { RestComponent } from './rest/rest.component';
 import { ViewencapComponent } from './viewencap/viewencap.component';
+import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 
 
 const routes: Routes = [
  
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'query', component:QueryparamComponent},
   {path: 'compA', component:ComponenAComponent},
   {path: 'compB', component:ComponenBComponent},
+  {path:'rvalid', component:ReactiveValidComponent}
 
 
   

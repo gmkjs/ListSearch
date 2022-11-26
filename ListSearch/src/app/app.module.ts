@@ -31,6 +31,7 @@ import { AboutComponent } from './about/about.component';
 import { QueryparamComponent } from './queryparam/queryparam.component';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
+import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
     AboutComponent,
     QueryparamComponent,
     ComponenAComponent,
-    ComponenBComponent
+    ComponenBComponent,
+    ReactiveValidComponent
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ export class Login2Component implements OnInit {
 
   }
   
-  loginform2= new FormGroup ({
+  loginform2 = new FormGroup ({
     username2: new FormControl(),
     password2: new FormControl()
   })

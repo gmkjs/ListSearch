@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+
 
 
 
@@ -15,10 +16,15 @@ export class AuthService {
 
 // }
 
-constructor(private http: HttpClient) { }
+constructor(private http: HttpClient, ) { }
 
 getApiData(): Observable<any> {
-return this.http.get('https://jsonplaceholder.typicode.com/posts')
+let myheader= new HttpHeaders({'car':'electric'})
+ let myParams = new HttpParams().set('bus','hydraulic')
+
+
+return this.http.get('https://jsonplaceholder.typicode.com/posts',{headers: myheader, params:myParams})
+
 }
 
 

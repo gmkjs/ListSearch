@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetmethService } from '../getmeth.service';
 
-
 @Component({
   selector: 'app-getcomp',
   templateUrl: './getcomp.component.html',
@@ -15,12 +14,9 @@ export class GetcompComponent implements OnInit {
   purple:any= [];
   authordata=[];
   textsearch ="";
-
   constructor(public elm:GetmethService) {  }
-
   ngOnInit(): void {
-    this.semk();
-  }
+    this.semk(); }
 
   semk(){
     this.elm.apiget().subscribe((respon)=>{

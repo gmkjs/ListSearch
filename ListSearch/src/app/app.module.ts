@@ -29,6 +29,7 @@ import { SearchBoxComponent } from './search-box/search-box.component';
 import { MergeapiService } from './mergeapi.service';
 // import { StoreModule } from '@ngrx/store';
 import { CounterrxComponent } from './counterrx/counterrx.component';
+import { Login2Component } from './login2/login2.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { CounterrxComponent } from './counterrx/counterrx.component';
     GetcompComponent,
     FilteredPipe,
     SearchBoxComponent,
+    Login2Component,
     // CounterrxComponent
     
   ],

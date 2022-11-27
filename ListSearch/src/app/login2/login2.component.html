@@ -1,0 +1,25 @@
+<p>login2 works!</p>
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js">
+
+        </script>
+    </head>
+<body>
+<form [formGroup]="lform" (ngSubmit)="login()" >
+
+
+<label>Enter your Name:</label>
+    <input type="text" class="username" formControlName="username" placeholder="Enter Username">
+    <div class="error" *ngIf="formdataerror.username">Please enter valid Name</div>
+{{formdataerror | json}}
+    <br>
+    <label>Enter your Email</label>
+    <input type="email" class="email" formControlName="email" placeholder="Enter Email">
+    <br>
+</form>
+
+</body>
+
+</html>

@@ -1,14 +1,14 @@
 import { Action, createReducer, on, State } from "@ngrx/store";
-import { increment , decrement, reset} from "./act.action";
+import { increment , decrement, reset} from "./act.actions";
 
 
-export const initialState = 5 ;
+ const initialState = 1 ;
 
 const _counterReducer = createReducer(
     initialState,
-    on(increment,(state) => state + 1),
-    on(decrement,(state) => state - 1),
-    on(reset,(state)=> 0),
+    on(increment,(state) => {return state + 1}),
+    on(decrement,(state) => {return state - 1}),
+    on(reset,(state)=> {return 0}),
 );
 
 

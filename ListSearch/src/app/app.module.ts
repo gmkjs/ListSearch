@@ -27,7 +27,8 @@ import { GetcompComponent } from './getcomp/getcomp.component';
 import { FilteredPipe } from './filter.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { MergeapiService } from './mergeapi.service';
-// import { StoreModule } from '@ngrx/store';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counterrx/act.reducer';
 import { CounterrxComponent } from './counterrx/counterrx.component';
 import { Login2Component } from './login2/login2.component';
 
@@ -52,7 +53,7 @@ import { Login2Component } from './login2/login2.component';
     FilteredPipe,
     SearchBoxComponent,
     Login2Component,
-    // CounterrxComponent
+    CounterrxComponent
     
   ],
   imports: [
@@ -62,7 +63,8 @@ import { Login2Component } from './login2/login2.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    // StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({count:counterReducer}, {}),
+    StoreModule.forRoot({}, {}),
 
     
   ],

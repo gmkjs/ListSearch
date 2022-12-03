@@ -58,96 +58,6 @@
       "id": 9
     },
     {
-      "username": "pavan",
-      "password": "159753",
-      "email": "pavan@gmail.com",
-      "id": 10
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 11
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 12
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 13
-    },
-    {
-      "username": "Murali",
-      "password": "welcome",
-      "email": "murali@gmail.com",
-      "id": 14
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 15
-    },
-    {
-      "username": "Keshavkumar",
-      "password": "123456",
-      "email": "keshavkumar@gmail.com",
-      "id": 16
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 17
-    },
-    {
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": 18
-    },
-    {
-      "username": "kumari",
-      "password": "kumari",
-      "email": "kumari@gmail.com",
-      "id": 19
-    },
-    {
-      "username": "sai",
-      "password": "sai",
-      "email": "sai@gmail.com",
-      "id": 20
-    },
-    {
-      "username": "vankay",
-      "password": "vankay",
-      "email": "vankay@gmail.com",
-      "id": 21
-    },
-    {
-      "username": "Uddhava",
-      "password": "udhava",
-      "email": "udhava@gmail.com",
-      "id": 22
-    },
-    {
-      "username": "Maheswarudu",
-      "password": "mahesh",
-      "email": "mahesh@gmail.com",
-      "id": 23
-    },
-    {
-      "username": "yogesh",
-      "password": "yogesh",
-      "email": "yogesh@gmail.com",
-      "id": 24
-    },
-    {
       "username": "Srikanth",
       "password": "srikanth",
       "email": "srikanth@gmail.com",
@@ -188,6 +98,14 @@
       "password": "asdfsaf",
       "email": "adfasf@gmail.com",
       "id": 31
+    }
+  ],
+
+  "Authentication":[
+    {
+      "username":"admin",
+      "password":"12345",
+      "Token":"AsdFgBHjcMk"
     }
   ]
 }

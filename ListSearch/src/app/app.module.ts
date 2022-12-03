@@ -31,6 +31,9 @@ import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counterrx/act.reducer';
 import { CounterrxComponent } from './counterrx/counterrx.component';
 import { Login2Component } from './login2/login2.component';
+import { RoleLoginComponent } from './role-login/role-login.component';
+
+// import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -53,7 +56,8 @@ import { Login2Component } from './login2/login2.component';
     FilteredPipe,
     SearchBoxComponent,
     Login2Component,
-    CounterrxComponent
+    CounterrxComponent,
+    RoleLoginComponent
     
   ],
   imports: [
@@ -64,7 +68,8 @@ import { Login2Component } from './login2/login2.component';
     ReactiveFormsModule,
     CommonModule,
     StoreModule.forRoot({count:counterReducer}, {}),
-    StoreModule.forRoot({}, {}),
+ 
+ 
 
     
   ],

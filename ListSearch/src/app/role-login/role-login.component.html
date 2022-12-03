@@ -1,0 +1,9 @@
+<p>role-login works!</p>
+
+
+<form [formGroup]="rForm">
+    <input type="text" name="username" placeholder="enter username" formControlName="username">
+    <br>
+    <input type="text" name="password" placeholder="enter password" formControlName="password">
+    <button (click)="rLogin()">Login</button>
+</form>

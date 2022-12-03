@@ -12,6 +12,20 @@ export class RestService {
   constructor(private http:HttpClient) {   }
 
      url: string = "http://localhost:3000/Users";
+
+     loginUrl: string = 'http://localhost:3000/Authentication';
+
+
+     getLogCred(data:any){
+      if(data.username == "admin" && data.password == "12345"){
+        return true;
+      }else{ return false;}
+      
+     }
+
+     getLogToken(){
+      return this.http.get(this.loginUrl);
+     }
      
      getusers(){
 

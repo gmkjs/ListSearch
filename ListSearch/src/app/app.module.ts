@@ -31,6 +31,7 @@ import { AboutComponent } from './about/about.component';
 import { QueryparamComponent } from './queryparam/queryparam.component';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
+import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ChangdetecComponent } from './changdetec/changdetec.component';
 // import { RouterModule } from '@angular/router';
@@ -60,8 +61,13 @@ import { ChangdetecComponent } from './changdetec/changdetec.component';
     QueryparamComponent,
     ComponenAComponent,
     ComponenBComponent,
+<<<<<<< HEAD
     ViewchildComponent,
     ChangdetecComponent
+=======
+    ReactiveValidComponent,
+    ViewchildComponent
+>>>>>>> ecdd76a9c19932bf3238cf229edc479ba725ef2b
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+
+
+<form [formGroup]="regForm">
+    <label>username</label>
+    <input type="text" class="form-control inp" formControlName="uname" >
+    <div *ngIf= "regForm.get('uname').touched&&regForm.get('uname').hasError('required')"> user name required</div>
+    <div *ngIf= "regForm.controls['uname'].touched && regForm.controls['uname'].errors['minlength']"> minlength is 6 chars </div>
+    <br>
+    <label class="mt-10">Email</label>
+    <input type="email" class="form-control  inp" formControlName="email" style="
+    margin-top: 50px;">
+    
+    <div *ngIf= "regForm.get('email').touched&&regForm.get('email').hasError('required')"> email required</div>
+    <div *ngIf= "regForm.get('email').touched&&regForm.get('email').hasError('email')"> not a valid email </div>
+
+    <button class="btn-btn-primary" (click)="getData()">submit</button>
+
+</form>

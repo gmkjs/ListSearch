@@ -14,12 +14,21 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { RestComponent } from './rest/rest.component';
 import { ViewencapComponent } from './viewencap/viewencap.component';
+<<<<<<< HEAD
 import { ChangdetecComponent } from './changdetec/changdetec.component';
+=======
+import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
+>>>>>>> ecdd76a9c19932bf3238cf229edc479ba725ef2b
 
 
 const routes: Routes = [
  
+<<<<<<< HEAD
   {path: '', component:Login2Component},
+=======
+  {path: 'home', component: HomeComponent},
+  {path: '', component:ViewchildComponent },
+>>>>>>> ecdd76a9c19932bf3238cf229edc479ba725ef2b
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
@@ -31,8 +40,15 @@ const routes: Routes = [
   {path: 'query', component:QueryparamComponent},
   {path: 'compA', component:ComponenAComponent},
   {path: 'compB', component:ComponenBComponent},
+<<<<<<< HEAD
   {path:'changdetec',component:ChangdetecComponent}
  
+=======
+  {path:'rvalid', component:ReactiveValidComponent}
+
+
+  
+>>>>>>> ecdd76a9c19932bf3238cf229edc479ba725ef2b
 ];
 
 @NgModule({

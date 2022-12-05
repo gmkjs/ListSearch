@@ -1,15 +1,31 @@
 <p>home works!</p>
 
-<a [routerLink]="['/carrers']">Carrers</a>
-<br>
-<a routerLink="/about">About</a>
-<br>
+<ul>
+    <li><a [routerLink]="['/carrers']">Carrers</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a [routerLink]="['/rest']">Contact</a></li>
+  </ul>
 
-<h1>Murali</h1> 
+
+<!-- <br>
+  <nav>
+    <a 
+       routerLink="/about"
+       routerLinkActive="activebutton"
+       ariaCurrentWhenActive="page">
+      About
+    </a> |
+    
+  </nav> -->
+
+<!-- <h1>Murali</h1>  -->
 
 <button type="button" (click)="logoutuser()">Logout</button>
+<router-outlet></router-outlet>
 
-<table >
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <table >
     <tbody style="width:100%">
         <tr>
             <th>S.no.</th>
@@ -24,4 +40,4 @@
             <td>{{elements.username}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->

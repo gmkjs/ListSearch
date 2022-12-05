@@ -32,6 +32,8 @@ import { QueryparamComponent } from './queryparam/queryparam.component';
 import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ChangdetecComponent } from './changdetec/changdetec.component';
+// import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,8 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
     QueryparamComponent,
     ComponenAComponent,
     ComponenBComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    ChangdetecComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +70,7 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    // RouterModule.forRoot(routes);
 
     
   ],

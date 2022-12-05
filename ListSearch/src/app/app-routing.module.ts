@@ -14,11 +14,12 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { RestComponent } from './rest/rest.component';
 import { ViewencapComponent } from './viewencap/viewencap.component';
+import { ChangdetecComponent } from './changdetec/changdetec.component';
 
 
 const routes: Routes = [
  
-  {path: '', component:ViewchildComponent },
+  {path: '', component:Login2Component},
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
@@ -30,9 +31,8 @@ const routes: Routes = [
   {path: 'query', component:QueryparamComponent},
   {path: 'compA', component:ComponenAComponent},
   {path: 'compB', component:ComponenBComponent},
-
-
-  
+  {path:'changdetec',component:ChangdetecComponent}
+ 
 ];
 
 @NgModule({

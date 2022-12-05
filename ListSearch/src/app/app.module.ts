@@ -61,13 +61,10 @@ import { ChangdetecComponent } from './changdetec/changdetec.component';
     QueryparamComponent,
     ComponenAComponent,
     ComponenBComponent,
-<<<<<<< HEAD
     ViewchildComponent,
-    ChangdetecComponent
-=======
+    ChangdetecComponent,
     ReactiveValidComponent,
     ViewchildComponent
->>>>>>> ecdd76a9c19932bf3238cf229edc479ba725ef2b
   ],
   imports: [
     BrowserModule,

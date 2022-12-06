@@ -34,6 +34,7 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
 import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ChangdetecComponent } from './changdetec/changdetec.component';
+import { InputdecorComponent } from './inputdecor/inputdecor.component';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -64,7 +65,8 @@ import { ChangdetecComponent } from './changdetec/changdetec.component';
     ViewchildComponent,
     ChangdetecComponent,
     ReactiveValidComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    InputdecorComponent
   ],
   imports: [
     BrowserModule,

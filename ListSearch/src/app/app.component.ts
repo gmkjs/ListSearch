@@ -8,4 +8,6 @@ import { Component, ViewChild,ElementRef, ChangeDetectionStrategy,  } from '@ang
 export class AppComponent {
   title:any;
 
+  parentproperty:string ="This data emiting from Parent";
+
 }

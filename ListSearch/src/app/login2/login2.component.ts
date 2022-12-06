@@ -10,6 +10,8 @@ import { Login2Service } from '../login2.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Login2Component implements OnInit {
+ productname:string="For input testing from parent";
+
   parentmsg:any;
 
   constructor(private gtm:Login2Service, private routing:Router) { }
@@ -38,5 +40,8 @@ export class Login2Component implements OnInit {
   triggerparentlogin2(){
     console.log("parent triggered");
   }
+
+
+
 
 }

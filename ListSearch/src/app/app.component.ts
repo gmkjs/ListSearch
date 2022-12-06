@@ -10,4 +10,8 @@ export class AppComponent {
 
   parentproperty:string ="This data emiting from Parent";
 
+  TotalEmpSal(){
+    alert("Total Salary is 100000 from Parent");
+  }
+
 }

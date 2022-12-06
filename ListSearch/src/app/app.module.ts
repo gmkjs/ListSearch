@@ -35,6 +35,7 @@ import { ReactiveValidComponent } from './reactive-valid/reactive-valid.componen
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ChangdetecComponent } from './changdetec/changdetec.component';
 import { InputdecorComponent } from './inputdecor/inputdecor.component';
+import { OutputdecorComponent } from './outputdecor/outputdecor.component';
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -66,7 +67,8 @@ import { InputdecorComponent } from './inputdecor/inputdecor.component';
     ChangdetecComponent,
     ReactiveValidComponent,
     ViewchildComponent,
-    InputdecorComponent
+    InputdecorComponent,
+    OutputdecorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,11 @@
-// const initialState = {
-//   counter: 0   
-// }
+export interface counterState{
+counter: number;
+channelName: string;
+}
+
+
+
+export const initialState: counterState = {
+  counter: 0,   
+  channelName:'Goutham'
+}

@@ -15,6 +15,7 @@ export class CustomctrxComponent implements OnInit {
   constructor(private store: Store<{}>, ) { }
 
   ngOnInit(): void {
+   
   }
 
   pass(){

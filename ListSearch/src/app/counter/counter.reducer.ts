@@ -3,8 +3,10 @@ import { increment, decrement, reset, custInput } from './counter.actions';
 
 const initialState = 1;
 
+
 const _counterReducer = createReducer(
     initialState,
+    
     on(increment,(state) => {return state + 1}),
     on(decrement,(state) => {return state - 1}),
     on(reset,(state)=> {return 0}),

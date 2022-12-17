@@ -36,6 +36,9 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ChangdetecComponent } from './changdetec/changdetec.component';
 import { InputdecorComponent } from './inputdecor/inputdecor.component';
 import { OutputdecorComponent } from './outputdecor/outputdecor.component';
+import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
+import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
+
 // import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -56,7 +59,6 @@ import { OutputdecorComponent } from './outputdecor/outputdecor.component';
     OuterComponent,
     RestComponent,
     ViewencapComponent,
-    
     Login2Component,
     CarrersComponent,
     AboutComponent,
@@ -68,18 +70,18 @@ import { OutputdecorComponent } from './outputdecor/outputdecor.component';
     ReactiveValidComponent,
     ViewchildComponent,
     InputdecorComponent,
-    OutputdecorComponent
+    OutputdecorComponent,
+    SiblingmodulComponent
   ],
   imports: [
     BrowserModule,
+    SiblingmodulModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    // RouterModule.forRoot(routes);
-
-    
+    // RouterModule.forRoot(routes); 
   ],
   providers: [subjectService, CurrencyPipe, PostapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},

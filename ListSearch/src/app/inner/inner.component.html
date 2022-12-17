@@ -1,22 +1,45 @@
 <html>
-            <div *ngFor="let recipe of resobj">
-                <!-- <div>{{recipe.id}}</div>
+<div *ngFor="let recipe of resobj">
+    <!-- <div>{{recipe.id}}</div>
                 <div>{{recipe.email}}</div> -->
-                <div>{{recipe.title}}</div>
-            </div>
+    <div>{{recipe.title}}</div>
+</div>
 
-    <ul>
-        <h2>Innercomponent</h2>
-        <!-- <li>{{krishap.id}}</li> -->
-        <!-- <li>{{resobj|json}}</li> -->
-        
-    </ul>
+<ul>
+    <h2>Innercomponent</h2>
+    <!-- <li>{{krishap.id}}</li> -->
+    <!-- <li>{{resobj|json}}</li> -->
+
+</ul>
 
 
 
 
 </html>
-<p>inner works!   INPUT WORKING HERE {{allremarks}}</p>
+<p>inner works! INPUT WORKING HERE {{allremarks}}</p>
+
+<form [formGroup]="recform" (ngSubmit)="onsubmit">
+    <label>Username :</label>
+    <input type="text" placeholder="Enter Username" name="productname"  />
+    <br />
+    <br />
+    <label>Email :</label>
+    <input type="email" placeholder="Enter Email" name="productemail"  />
+    <br />
+    <br />
+    <button type="button">Submit</button>
 
 
-
+<table>
+    <tbody>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+        <tr *ngFor="let element of formdata ">
+            <td>{{ element.productname }}</td>
+            <td>{{ element.productemail }}</td>
+        </tr>
+    </tbody>
+</table>
+</form>

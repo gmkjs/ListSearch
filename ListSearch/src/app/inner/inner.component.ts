@@ -1,7 +1,9 @@
 import { GardService } from '../gard.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { PostapiService } from '../postapi.service';
 import { Observable } from 'rxjs';
+import { FormControl, FormGroup } from '@angular/forms';
+import { style } from '@angular/animations';
 
 
 @Component({
@@ -15,8 +17,22 @@ import { Observable } from 'rxjs';
 export class InnerComponent implements OnInit {
   @Input() allremarks:any;
 
+ 
+
+
+
   krishap:any;
   public resobj:any=[];
+  public formdata:any = [];
+  // productname:any;
+  // productemail:any;
+  
+
+  recform = new FormGroup({
+    productname: new FormControl(" "),
+    productemail: new FormControl(" "),
+  })
+  
 
   constructor(private GardService:GardService,private supreme:PostapiService) { 
 
@@ -25,7 +41,16 @@ export class InnerComponent implements OnInit {
   ngOnInit(): void {
     this.servget();
     this.callpostdata();
+    this.onsubmit();
   }
+
+  onsubmit() {
+    // this.productemail = data.email;
+    this.formdata.push(this.recform.value);
+    console.log("formdata",this.formdata);
+    
+  }
+  
 
   servget(){
 
@@ -45,6 +70,9 @@ export class InnerComponent implements OnInit {
       console.log(resp);
     })
 
+
+   
   }
+ 
 
 }

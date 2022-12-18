@@ -33,11 +33,13 @@ import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.componen
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
 import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { HostblDirective } from './hostbl.directive';
 import { ChangdetecComponent } from './changdetec/changdetec.component';
 import { InputdecorComponent } from './inputdecor/inputdecor.component';
 import { OutputdecorComponent } from './outputdecor/outputdecor.component';
 import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
 import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
+import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
 
 // import { RouterModule } from '@angular/router';
 
@@ -69,9 +71,11 @@ import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.
     ChangdetecComponent,
     ReactiveValidComponent,
     ViewchildComponent,
+    HostblDirective,
     InputdecorComponent,
     OutputdecorComponent,
-    SiblingmodulComponent
+    SiblingmodulComponent,
+    Ng4TrackbyComponent
   ],
   imports: [
     BrowserModule,

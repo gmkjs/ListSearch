@@ -1,0 +1,16 @@
+<p>* ngFor-trackby works!</p>
+
+<div>
+    <ul >
+        <li *ngFor="let item of items; trackby: trackBycheck">{{item.name}}</li>
+    </ul>
+</div>
+<button (click)="addItem()">Add name</button>
+
+
+<h3>pre fetching data using Resolve on route with ActivatedRoute Snapshot.data in component</h3>
+<div>
+    <ul *ngFor="let data of usersdata">
+        <li>{{data.first_name}}</li>
+    </ul>
+</div>

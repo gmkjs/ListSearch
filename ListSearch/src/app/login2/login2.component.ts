@@ -17,6 +17,7 @@ export class Login2Component implements OnInit {
   constructor(private gtm:Login2Service, private routing:Router) { }
 
   ngOnInit(): void {
+this.gtm
     setTimeout(() => {
       this.parentmsg = "welcome parent";      
     }, 5000);

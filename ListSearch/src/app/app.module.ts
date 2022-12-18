@@ -25,6 +25,23 @@ import { OuterComponent } from './outer/outer.component';
 import { PostapiService } from './postapi.service';
 import { RestComponent } from './rest/rest.component';
 import { ViewencapComponent } from './viewencap/viewencap.component';
+import { Login2Component } from './login2/login2.component';
+import { CarrersComponent } from './carrers/carrers.component';
+import { AboutComponent } from './about/about.component';
+import { QueryparamComponent } from './queryparam/queryparam.component';
+import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.component';
+import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
+import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { HostblDirective } from './hostbl.directive';
+import { ChangdetecComponent } from './changdetec/changdetec.component';
+import { InputdecorComponent } from './inputdecor/inputdecor.component';
+import { OutputdecorComponent } from './outputdecor/outputdecor.component';
+import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
+import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
+import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
+
+// import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -43,22 +60,37 @@ import { ViewencapComponent } from './viewencap/viewencap.component';
     ContactComponent,
     OuterComponent,
     RestComponent,
-    ViewencapComponent
-    
+    ViewencapComponent,
+    Login2Component,
+    CarrersComponent,
+    AboutComponent,
+    QueryparamComponent,
+    ComponenAComponent,
+    ComponenBComponent,
+    ViewchildComponent,
+    ChangdetecComponent,
+    ReactiveValidComponent,
+    ViewchildComponent,
+    HostblDirective,
+    InputdecorComponent,
+    OutputdecorComponent,
+    SiblingmodulComponent,
+    Ng4TrackbyComponent
   ],
   imports: [
     BrowserModule,
+    SiblingmodulModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-
-    
+    // RouterModule.forRoot(routes); 
   ],
   providers: [subjectService, CurrencyPipe, PostapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},
-  {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true}
+  {provide: HTTP_INTERCEPTORS, useClass:LoggingInterceptor, multi:true},
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

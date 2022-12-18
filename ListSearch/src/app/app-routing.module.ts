@@ -37,7 +37,7 @@ const routes: Routes = [
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
   {path: 'register', component:RegisterComponent},
-  {path: 'trackby', component:Ng4TrackbyComponent},
+  {path: 'trackby', component:Ng4TrackbyComponent, resolve:{users: RresolveService}},
   {path:'viewencap',component:ViewencapComponent},
   {path: 'rest', component:RestComponent},
   {path: 'carrers', component:CarrersComponent},

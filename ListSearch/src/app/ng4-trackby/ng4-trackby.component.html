@@ -6,3 +6,11 @@
     </ul>
 </div>
 <button (click)="addItem()">Add name</button>
+
+
+
+<div>
+    <ol *ngFor="let data of usersdata">
+        <li>{{data.first_name}}</li>
+    </ol>
+</div>

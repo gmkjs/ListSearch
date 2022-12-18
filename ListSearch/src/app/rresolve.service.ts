@@ -8,7 +8,7 @@ import { delay, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RresolveService implements Resolve<Observable<any>>{
-public url = 'https://api.github.com/users';
+public url = 'https://reqres.in/api/users?page=2';
   constructor(private http: HttpClient) { }
 
   getUsers():Observable<any>{

@@ -11,7 +11,7 @@ interface Item {
   styleUrls: ['./ng4-trackby.component.scss']
 })
 export class Ng4TrackbyComponent implements OnInit {
-public users: any= [];
+public usersdata: any= [];
 
 
 
@@ -25,9 +25,9 @@ public users: any= [];
 
   ngOnInit(): void {
 
-    this.users = this.routerslv.snapshot.data;
+    this.usersdata = this.routerslv.snapshot.data['users'].data;
 
-    console.log(this.users,'yyy')
+    console.log(this.usersdata,'yyy')
   }
 addItem(){
   this.items = [

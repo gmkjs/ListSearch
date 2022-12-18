@@ -34,6 +34,13 @@ import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.componen
 import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { HostblDirective } from './hostbl.directive';
+import { ChangdetecComponent } from './changdetec/changdetec.component';
+import { InputdecorComponent } from './inputdecor/inputdecor.component';
+import { OutputdecorComponent } from './outputdecor/outputdecor.component';
+import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
+import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
+
+// import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -53,26 +60,30 @@ import { HostblDirective } from './hostbl.directive';
     OuterComponent,
     RestComponent,
     ViewencapComponent,
-    
     Login2Component,
     CarrersComponent,
     AboutComponent,
     QueryparamComponent,
     ComponenAComponent,
     ComponenBComponent,
+    ViewchildComponent,
+    ChangdetecComponent,
     ReactiveValidComponent,
     ViewchildComponent,
-    HostblDirective
+    HostblDirective,
+    InputdecorComponent,
+    OutputdecorComponent,
+    SiblingmodulComponent
   ],
   imports: [
     BrowserModule,
+    SiblingmodulModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-
-    
+    // RouterModule.forRoot(routes); 
   ],
   providers: [subjectService, CurrencyPipe, PostapiService,
   {provide: HTTP_INTERCEPTORS, useClass:HeaderInterceptor, multi:true},

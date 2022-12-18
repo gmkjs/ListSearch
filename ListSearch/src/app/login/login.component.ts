@@ -19,12 +19,6 @@ export interface Person {
   providers: [AuthService]
 })
 
-  
- 
-
-
-
-
 
 export class LoginComponent implements OnInit {
   count=0;

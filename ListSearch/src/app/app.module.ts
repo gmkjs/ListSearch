@@ -33,6 +33,7 @@ import { ComponenAComponent } from './siblinmodul/componen-a/componen-a.componen
 import { ComponenBComponent } from './siblinmodul/componen-b/componen-b.component';
 import { ReactiveValidComponent } from './reactive-valid/reactive-valid.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { HostblDirective } from './hostbl.directive';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
     ComponenAComponent,
     ComponenBComponent,
     ReactiveValidComponent,
-    ViewchildComponent
+    ViewchildComponent,
+    HostblDirective
   ],
   imports: [
     BrowserModule,

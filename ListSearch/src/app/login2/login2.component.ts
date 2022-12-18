@@ -15,7 +15,7 @@ export class Login2Component implements OnInit {
   constructor(private gtm:Login2Service, private routing:Router) { }
 
   ngOnInit(): void {
-
+this.gtm
   }
   
   loginform2= new FormGroup ({

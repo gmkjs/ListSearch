@@ -20,7 +20,7 @@ import { ReactiveValidComponent } from './reactive-valid/reactive-valid.componen
 const routes: Routes = [
  
   {path: 'home', component: HomeComponent},
-  {path: '', component:ViewchildComponent },
+  {path: 'vchild', component:ViewchildComponent },
   {path: 'login', component: LoginComponent},
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},

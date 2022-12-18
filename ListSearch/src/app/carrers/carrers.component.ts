@@ -12,6 +12,9 @@ export class CarrersComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.dataList,'datalist');
+    this.dataList.forEach
+    // this.dataList.forEach(element)
   }
 
   dataList = [
@@ -43,8 +46,12 @@ export class CarrersComponent implements OnInit {
     }
   ];
 
-  getkeys(obj: {}){
-    return Object.keys(obj);
-  }
+  
+  // getkeys(obj: {}){
+  //   console.log(obj,'object data');
+  //   return Object.keys(obj);
+  // }
+
+ 
 
 }

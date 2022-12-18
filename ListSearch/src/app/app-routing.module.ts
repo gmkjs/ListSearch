@@ -22,6 +22,7 @@ import { OfferComponent } from './offers/offer/offer.component';
 import { OffersModule } from './offers/offers.module';
 import { InnerComponent } from './inner/inner.component';
 import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
+import { RresolveService } from './rresolve.service';
 
 
 

@@ -39,6 +39,7 @@ import { InputdecorComponent } from './inputdecor/inputdecor.component';
 import { OutputdecorComponent } from './outputdecor/outputdecor.component';
 import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
 import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
+import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
 
 // import { RouterModule } from '@angular/router';
 
@@ -73,7 +74,8 @@ import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.
     HostblDirective,
     InputdecorComponent,
     OutputdecorComponent,
-    SiblingmodulComponent
+    SiblingmodulComponent,
+    Ng4TrackbyComponent
   ],
   imports: [
     BrowserModule,

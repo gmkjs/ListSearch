@@ -21,6 +21,7 @@ import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.
 import { OfferComponent } from './offers/offer/offer.component';
 import { OffersModule } from './offers/offers.module';
 import { InnerComponent } from './inner/inner.component';
+import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
 
 
 
@@ -35,6 +36,7 @@ const routes: Routes = [
   {path: 'login2', component: Login2Component},
   {path: 'home', component:HomeComponent, canActivate:[CactivateGuard]},
   {path: 'register', component:RegisterComponent},
+  {path: 'trackby', component:Ng4TrackbyComponent},
   {path:'viewencap',component:ViewencapComponent},
   {path: 'rest', component:RestComponent},
   {path: 'carrers', component:CarrersComponent},

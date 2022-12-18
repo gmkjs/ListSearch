@@ -1,0 +1,8 @@
+<p>* ngFor-trackby works!</p>
+
+<div>
+    <ul >
+        <li *ngFor="let item of items; trackby: trackBycheck">{{item.name}}</li>
+    </ul>
+</div>
+<button (click)="addItem()">Add name</button>

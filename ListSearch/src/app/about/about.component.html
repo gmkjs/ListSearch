@@ -1,4 +1,11 @@
 <!-- <p>about works!</p> -->
 <h1>About Working</h1>
-
-<!-- <h2 style="color:red">About is Working</h2> -->
+<form [formGroup]="disableform" >
+    <label>Enter Username:</label>
+    <input type="text" class="uname" placeholder="Enter your Name" formControlName="uname">
+    <br>
+    <label>Enter Email:</label>
+    <input type="email" class="uemail" placeholder="Enter your pwd" formControlName="uemail">
+    <br>
+    <button [disabled]= "disableform.invalid || isNextDisabled">submit</button>
+</form>

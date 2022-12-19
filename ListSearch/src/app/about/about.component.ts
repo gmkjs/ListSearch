@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Form, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+
+
+   isNextDisabled = true;
+
+   disableform = new FormGroup({
+    uname: new FormControl('',Validators.required),
+    uemail: new FormControl('',Validators.required)
+   })
+
+  constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
+
+    this.disableform.valueChanges.subscribe((v)=>{
+      this.isNextDisabled = !this.disableform.valid;
+    })
+   
   }
+
+  
+
 
 }

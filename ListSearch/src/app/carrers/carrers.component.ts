@@ -47,10 +47,10 @@ export class CarrersComponent implements OnInit {
   ];
 
   
-  // getkeys(obj: {}){
-  //   console.log(obj,'object data');
-  //   return Object.keys(obj);
-  // }
+  getkeys(obj: {}){
+    console.log(obj,'object data');
+    return Object.keys(obj);
+  }
 
  
 

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl } from '@angular/forms';
+import { FormGroup,FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Login2Service } from '../login2.service';
 
@@ -24,7 +24,7 @@ this.gtm
   }
   
   loginform2= new FormGroup ({
-    username2: new FormControl(),
+    username2: new FormControl([]),
     password2: new FormControl()
   })
 

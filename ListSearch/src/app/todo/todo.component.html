@@ -1,0 +1,22 @@
+<p>todo works!</p>
+<input   #firstdiv type="text" name="firstdiv"  placeholder="userName" ngModel>
+
+<button (click)="getData(firstdiv.value)">click me</button>
+
+<table>
+    <tr *ngFor="let i of userList">
+        <th>Sno</th>
+        <th>User name</th>
+        <th>delete user</th>
+    </tr>
+    <tr>
+        <td>{{userList }}
+        </td>
+        <!-- <td>{{ i }}
+        </td> -->
+        <!-- <td>
+            <button (click)="delete(userList)">delete</button>
+        </td> -->
+    </tr>
+    
+</table>

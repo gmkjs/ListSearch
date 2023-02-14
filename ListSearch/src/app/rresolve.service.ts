@@ -9,10 +9,15 @@ import { delay, Observable } from 'rxjs';
 })
 export class RresolveService implements Resolve<Observable<any>>{
 public url = 'https://reqres.in/api/users?page=2';
+public url2= 'https://reqres.in/api/users/2';
   constructor(private http: HttpClient) { }
 
   getUsers():Observable<any>{
 return this.http.get(this.url).pipe(delay(1000))
+  }
+
+  getUpload():Observable<any>{
+    return this.http.get(this.url2);
   }
 
   resolve():Observable<any>{

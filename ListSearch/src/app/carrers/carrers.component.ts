@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RresolveService } from '../rresolve.service';
 
 @Component({
   selector: 'app-carrers',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class CarrersComponent implements OnInit {
 
   public obj:any;
+  dataShow:any= [];
 
-  constructor() { }
+  constructor(public crrsrvc:RresolveService) { }
 
   ngOnInit(): void {
-    console.log(this.dataList,'datalist');
+    this.showData();
+    // console.log(this.dataList,'datalist');
     this.dataList.forEach
     // this.dataList.forEach(element)
   }
@@ -48,10 +51,16 @@ export class CarrersComponent implements OnInit {
 
   
   getkeys(obj: {}){
-    console.log(obj,'object data');
+    // console.log(obj,'object data');
     return Object.keys(obj);
   }
 
- 
+ showData(){
+  this.crrsrvc.getUpload().subscribe(res=>{
+    this.dataShow = [];
+    this.dataShow.push(res.data)
+    console.log(this.dataShow,res, 'hhhh')
+  })
+ }
 
 }

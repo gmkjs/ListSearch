@@ -23,6 +23,9 @@ import { OffersModule } from './offers/offers.module';
 import { InnerComponent } from './inner/inner.component';
 import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
 import { RresolveService } from './rresolve.service';
+import { TdrivenComponent } from './tdriven/tdriven.component';
+import { TodoComponent } from './todo/todo.component';
+import { FebfiformComponent } from './febfiform/febfiform.component';
 
 
 
@@ -51,7 +54,9 @@ const routes: Routes = [
   {path:'offer', component:OfferComponent},
   // {path:'offer', component:OfferComponent},
   {path:'inner', component:InnerComponent},
-
+  {path:'tdriven', component:TdrivenComponent},
+ {path:'todo', component:TodoComponent},
+ {path:'febfi', component:FebfiformComponent}
 
 
 

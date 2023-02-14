@@ -40,6 +40,9 @@ import { OutputdecorComponent } from './outputdecor/outputdecor.component';
 import { SiblingmodulModule } from './siblingmodul/siblingmodul.module';
 import { SiblingmodulComponent } from './siblingmodul/siblingmodul/siblingmodul.component';
 import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
+import { TdrivenComponent } from './tdriven/tdriven.component';
+import { TodoComponent } from './todo/todo.component';
+import { FebfiformComponent } from './febfiform/febfiform.component';
 
 // import { RouterModule } from '@angular/router';
 
@@ -75,7 +78,10 @@ import { Ng4TrackbyComponent } from './ng4-trackby/ng4-trackby.component';
     InputdecorComponent,
     OutputdecorComponent,
     SiblingmodulComponent,
-    Ng4TrackbyComponent
+    Ng4TrackbyComponent,
+    TdrivenComponent,
+    TodoComponent,
+    FebfiformComponent
   ],
   imports: [
     BrowserModule,

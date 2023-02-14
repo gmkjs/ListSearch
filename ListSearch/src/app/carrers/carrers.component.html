@@ -24,3 +24,19 @@
    
     </tbody>
 </table>
+{{dataShow | json}}
+
+<table style="width: 700px;">
+    <tr >
+        <th>email</th>
+        <th>avtar</th>
+        <th>id</th>
+
+    </tr>
+    <tr *ngFor="let  val of dataShow">
+        <td>{{val.email}}</td>
+        <td>{{val.avtar}}</td>
+        <td>{{val.id}}</td>
+
+    </tr>
+</table>

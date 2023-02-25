@@ -9,19 +9,24 @@ import { counterReducer } from './counter/counter.reducer';
 import { CounterrxComponent } from './counterrx/counterrx.component';
 import { CustomctrxComponent } from './customctrx/customctrx.component';
 import { FormsModule } from '@angular/forms';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CounterrxComponent,
-    CustomctrxComponent
+    CustomctrxComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({count:counterReducer}, {})
+    StoreModule.forRoot({count:counterReducer}, {}),
+    StoreDevtoolsModule.instrument({  logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

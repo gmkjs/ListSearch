@@ -10,8 +10,9 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   // {path: '', pathMatch:'full', redirectTo: 'login'}, ///anything will direct from app component to login component
   
-  {path: '', component: LoginComponent},
-  {path:'home', component:HomeComponent},
+  
+  {path:'login', component:LoginComponent},
+  {path: 'home', component: HomeComponent},
   {path:'about', component:AboutComponent},
   {path:'contact', component:ContactComponent},
   {path:'carrers', component:CareersComponent}

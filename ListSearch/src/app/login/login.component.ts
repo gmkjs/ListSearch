@@ -27,7 +27,7 @@ lform= new FormGroup({
   getValidate(){
 const res = this.srvc.getAuth(this.lform.value);
 if(res == true){
-this.rtr.navigate(['app'])
+this.rtr.navigate(['home'])
 }
   }
 

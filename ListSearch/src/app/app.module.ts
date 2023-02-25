@@ -25,6 +25,6 @@ import { AboutComponent } from './about/about.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

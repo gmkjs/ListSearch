@@ -1,17 +1,20 @@
+<!-- <router-outlet></router-outlet> -->
+
 <header class="header">
     <h1 class="title">LIST SEARCH</h1>
+    
 </header>
 <div class="center">
     
     <div class="container">
-        <form>
+        <form [formGroup]="lform" (ngSubmit)="getValidate()">
             <label> Username</label>
-            <input type="text" placeholder="Enter username "> 
+            <input type="text" name="username" formControlName="username" placeholder="Enter username "> 
             <label> password</label>
-            <input type="password" placeholder="Enter password"> 
+            <input type="password" name="password" formControlName="password" placeholder="Enter password"> 
             <button type="submit">Login</button>
         </form>
-       <p>{{name}}</p> 
+       <p></p> 
     </div>
 </div>
 <footer class="footer">

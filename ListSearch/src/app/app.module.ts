@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { PostsComponent } from './posts/posts.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PostsComponent } from './posts/posts.component';
     LoginComponent,
     CounterrxComponent,
     CustomctrxComponent,
-    PostsComponent
+    PostsComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
